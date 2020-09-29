@@ -1,38 +1,147 @@
-.App {
+
+/* Common */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  color: white;
+  background-color: #2222aa;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 3.7rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  width: 50%;
+  color: white;
+  background-color: #2222aa;
+  border: 2px solid white;
+}
+
+/* Landing Page */
+
+
+/* Application Page */
+
+.field {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 1rem;
+}
+
+label {
+  text-align: left;
+}
+
+input, select {
+  padding: .5rem
+}
+
+.message {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+/* Show Page */
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: .5rem;
+  margin: .5rem;
+  min-width: 350px;
+  text-align: left;
+  background-image: linear-gradient(to right, darkviolet , rgb(69, 58, 173));
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgb(10, 9, 99);
+  cursor: pointer;
+}
+
+.checkbox-container {
+  margin-bottom: 1rem;
+}
+
+.select-text {
+  font-size: .7rem;
+  padding-left: .5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.show-button {
+  width: 200px;
+  margin: .4rem .4rem;
+}
+
+.order-button {
+  background-image: linear-gradient(to right, darkviolet , rgb(69, 58, 173));;
+}
+
+/* Card Show */
+
+.text-box {
+  margin: 0 10%;
+}
+
+.back-button {
+  margin: 1rem;
+  width: 150px;
+}
+
+.show-card {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: .5rem;
+  margin: .5rem;
+  min-width: 350px;
+  max-width: 90%;
+  font-size: 30px;
+  text-align: left;
+  background-image: linear-gradient(to right, darkviolet , rgb(69, 58, 173));
+}
+
+@media(max-width: 500px) {
+
 }
