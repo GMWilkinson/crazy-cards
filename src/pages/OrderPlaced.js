@@ -16,8 +16,8 @@ const OrderPlaced = () => {
                 </div>
                 <div>
                     <p>You have ordered:</p>
-                    {cards.map(card =>
-                        <h3>{card.name}</h3>
+                    {cards.map((card, i) =>
+                        <h3 key={i}>{card.name}</h3>
                     )}
                     <p>They will be with you in up to 14 days</p>
                 </div>

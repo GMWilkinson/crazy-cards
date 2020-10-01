@@ -5,7 +5,6 @@ import axios from 'axios';
 import FormInput from '../components/FormInput';
 import FormSelect from '../components/FormSelect';
 
-import checkData from '../lib/checkData';
 import calculateAge from '../lib/calculateAge';
 
 const Application = () => {
@@ -41,10 +40,14 @@ const Application = () => {
             }
         });
         if (fieldsComplete.length === userData.length) {
-            axios.get('http://localhost:4000/')
+            axios.get('http://localhost:4000/', {
+                params: {
+                    userEntries: data
+                  }
+            })
               .then(res => {
                 history.push('/show-results', {
-                    cards: checkData(res.data, userData)
+                    cards: res.data
                 });
               })
               .catch(error => {

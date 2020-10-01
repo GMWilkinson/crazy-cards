@@ -3,7 +3,7 @@ import axios from 'axios';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import Application from './pages/Application';
-import checkData from './lib/checkData';
+import checkData from '../server/lib/checkData';
 import calculateAge from './lib/calculateAge';
 import Cards from '../server/api/availableCards';
 import FormInput from './components/FormInput';

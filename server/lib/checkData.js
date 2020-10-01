@@ -34,4 +34,4 @@ function checkData(cards, userData) {
     return acceptedDupesRemoved;
 }
 
-export default checkData;
+module.exports = checkData;
