@@ -27,12 +27,18 @@ yarn start:server
 yarn start
 ```
 
+### `Tests`
+
+```zsh
+yarn test
+```
+
+
 ## To Do
 
 * Add a proper basket page
 * Move checkData function to server
 * Improve styling
 * Add ability to check requirements based on distance from postcode
-* Add automated tests
 
 
